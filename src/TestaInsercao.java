@@ -11,7 +11,7 @@ public class TestaInsercao {
 
         Statement stm = connection.createStatement();
         stm.execute("INSERT INTO PRODUTOS (nome, descricao) VALUES ('MOUSE', 'MOUSE SEM FIO')"
-                    , Statement.RETURN_GENERATED_KEYS);
+                , Statement.RETURN_GENERATED_KEYS);
 
         ResultSet rst = stm.getGeneratedKeys();
         while (rst.next()){
